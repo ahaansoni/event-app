@@ -1,0 +1,917 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+      Sabha — Event planning in Jaipur | Weddings, offsites, celebrations
+    </title>
+    <meta
+      name="description"
+      content="Full-service event planning in Jaipur and across Rajasthan. Weddings, destination weddings, corporate offsites, milestone birthdays and college festivals — planned end to end."
+    />
+
+    <!-- Open Graph / social preview -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Sabha — Event planning in Jaipur" />
+    <meta
+      property="og:description"
+      content="Pick the date. We'll handle the other 400 decisions. Full-service event planning across Jaipur and Rajasthan."
+    />
+    <meta property="og:image" content="images/og-cover.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,700;1,6..96,400&family=Karla:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- ============================================================
+     ANALYTICS — paste ONE of these, then uncomment.
+     A) Google Analytics 4  (needs a free GA4 property)
+     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+     <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}
+     gtag('js',new Date());gtag('config','G-XXXXXXX');</script>
+
+     B) Cloudflare Web Analytics (free, no cookie banner needed)
+     <script defer src="https://static.cloudflareinsights.com/beacon.min.js"
+       data-cf-beacon='{"token": "YOUR_TOKEN"}'></script>
+     ============================================================ -->
+
+    <!-- Structured data: helps Google show the business in local results -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Sabha Event Company",
+        "description": "Full-service event planning in Jaipur, Rajasthan.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Jaipur",
+          "addressRegion": "Rajasthan",
+          "addressCountry": "IN"
+        },
+        "telephone": "+91-00000-00000",
+        "areaServed": "Rajasthan",
+        "priceRange": "₹₹"
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+
+    <!-- ─────────────── HEADER ─────────────── -->
+    <header class="bar" id="bar">
+      <div class="wrap bar-in">
+        <a class="brand" href="#top" aria-label="Sabha, home">
+          <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
+            <path
+              d="M16 2 C9 2 4 8 4 15 v15 h24 V15 C28 8 23 2 16 2 Z"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+            />
+            <path
+              d="M16 8 C12 8 10 11 10 15 v15 M16 8 C20 8 22 11 22 15 v15"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.2"
+              opacity=".6"
+            />
+            <circle cx="16" cy="15" r="2.4" fill="currentColor" />
+          </svg>
+          <span class="brand-name">Sabha</span>
+        </a>
+
+        <nav class="nav" id="nav" aria-label="Main">
+          <a href="#services">What we do</a>
+          <a href="#work">Work</a>
+          <a href="#venues">Venues</a>
+          <a href="#packages">Packages</a>
+          <a href="#faq">FAQ</a>
+          <a class="nav-cta" href="#enquire">Start an enquiry</a>
+        </nav>
+
+        <button
+          class="burger"
+          id="burger"
+          aria-expanded="false"
+          aria-controls="nav"
+          aria-label="Open menu"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- ─────────────── HERO ─────────────── -->
+      <section class="hero" id="top">
+        <div class="hero-print" aria-hidden="true"></div>
+        <div class="wrap hero-in">
+          <p class="eyebrow">Jaipur · Rajasthan · planning since 2014</p>
+          <h1 class="hero-h">
+            Pick the date.<br /><em
+              >We'll handle the other<br />four hundred decisions.</em
+            >
+          </h1>
+          <p class="hero-sub">
+            Weddings, corporate offsites, milestone birthdays and college
+            festivals — scoped, budgeted and run end to end by one team that
+            stays on site until the last guest leaves.
+          </p>
+
+          <div class="hero-acts">
+            <a class="btn btn-solid" href="#enquire">Start an enquiry</a>
+            <a class="btn btn-ghost" href="#work">See past events</a>
+          </div>
+
+          <!-- ── SIGNATURE: season availability ribbon ── -->
+          <div class="season" id="season">
+            <div class="season-head">
+              <h2 class="season-t">Season 2026&ndash;27 &mdash; open dates</h2>
+              <p class="season-note">
+                Tap a date to carry it into your enquiry.
+              </p>
+            </div>
+            <div
+              class="season-tabs"
+              id="seasonTabs"
+              role="tablist"
+              aria-label="Month"
+            ></div>
+            <div class="season-rail" id="seasonRail"></div>
+            <ul class="season-key">
+              <li><i class="dot open"></i>Open</li>
+              <li><i class="dot few"></i>Few slots</li>
+              <li><i class="dot full"></i>Booked</li>
+              <li class="season-mu">
+                <i class="dot mu"></i>Auspicious muhurat
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ─────────────── TICKER ─────────────── -->
+      <div class="ticker" aria-hidden="true">
+        <div class="ticker-run">
+          <span>Sangeet</span><i>·</i><span>Haldi</span><i>·</i
+          ><span>Pheras</span><i>·</i><span>Reception</span><i>·</i
+          ><span>Annual day</span><i>·</i><span>Offsite</span><i>·</i
+          ><span>Product launch</span><i>·</i><span>Mehendi</span><i>·</i
+          ><span>Milestone birthday</span><i>·</i><span>College fest</span
+          ><i>·</i> <span>Sangeet</span><i>·</i><span>Haldi</span><i>·</i
+          ><span>Pheras</span><i>·</i><span>Reception</span><i>·</i
+          ><span>Annual day</span><i>·</i><span>Offsite</span><i>·</i
+          ><span>Product launch</span><i>·</i><span>Mehendi</span><i>·</i
+          ><span>Milestone birthday</span><i>·</i><span>College fest</span
+          ><i>·</i>
+        </div>
+      </div>
+
+      <!-- ─────────────── SERVICES ─────────────── -->
+      <section class="sec" id="services">
+        <div class="wrap">
+          <p class="eyebrow">What we do</p>
+          <h2 class="sec-h">Six kinds of event, one team</h2>
+          <p class="sec-lede">
+            We take the whole thing — venue, vendors, budget, timeline, and the
+            person standing at the gate at 6am making sure the flowers arrived.
+          </p>
+
+          <div class="grid-3 reveal-group">
+            <article class="card reveal">
+              <h3>Weddings</h3>
+              <p>
+                Three to five function days, 200&ndash;1500 guests. Venue
+                scouting, decor, catering tastings, guest logistics, and a
+                run-sheet everyone in the family can read.
+              </p>
+              <ul class="tags">
+                <li>Sangeet</li>
+                <li>Haldi</li>
+                <li>Pheras</li>
+                <li>Reception</li>
+              </ul>
+            </article>
+            <article class="card reveal">
+              <h3>Destination weddings</h3>
+              <p>
+                For families flying into Jaipur, Udaipur or Jodhpur. Airport
+                pickups, room blocks, welcome hampers, and a local team that
+                speaks to every vendor in their language.
+              </p>
+              <ul class="tags">
+                <li>Room blocks</li>
+                <li>Transfers</li>
+                <li>Guest desk</li>
+              </ul>
+            </article>
+            <article class="card reveal">
+              <h3>Corporate events</h3>
+              <p>
+                Annual days, sales kick-offs, offsites and dealer meets.
+                Purchase-order friendly quotes, GST invoicing, and AV that has
+                been tested before your CEO walks on stage.
+              </p>
+              <ul class="tags">
+                <li>Offsites</li>
+                <li>Annual day</li>
+                <li>Dealer meet</li>
+              </ul>
+            </article>
+            <article class="card reveal">
+              <h3>Milestone celebrations</h3>
+              <p>
+                Birthdays, anniversaries, retirements, ring ceremonies. Smaller
+                headcount, same attention — usually the events people remember
+                longest.
+              </p>
+              <ul class="tags">
+                <li>Birthdays</li>
+                <li>Anniversaries</li>
+                <li>Roka</li>
+              </ul>
+            </article>
+            <article class="card reveal">
+              <h3>College &amp; community fests</h3>
+              <p>
+                Stage, sound, artist coordination, crowd flow and safety
+                marshalling — built for tight student budgets and immovable
+                campus deadlines.
+              </p>
+              <ul class="tags">
+                <li>Stage &amp; sound</li>
+                <li>Artist mgmt</li>
+                <li>Crowd flow</li>
+              </ul>
+            </article>
+            <article class="card reveal">
+              <h3>Decor &amp; production</h3>
+              <p>
+                Already have a planner? Book us for the build alone — mandap,
+                florals, lighting design, LED walls, and teardown the same
+                night.
+              </p>
+              <ul class="tags">
+                <li>Florals</li>
+                <li>Lighting</li>
+                <li>LED &amp; AV</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ─────────────── PROCESS + VENUES (sand block) ─────────────── -->
+      <div class="sand">
+        <section class="sec" id="process">
+          <div class="wrap">
+            <p class="eyebrow">How it runs</p>
+            <h2 class="sec-h">Four stages, no surprises</h2>
+
+            <ol class="steps reveal-group">
+              <li class="step reveal">
+                <span class="step-n">01</span>
+                <h3>Enquiry &amp; date hold</h3>
+                <p>
+                  You share the date, headcount and a rough budget. We hold the
+                  date for seven days at no cost while you decide.
+                </p>
+              </li>
+              <li class="step reveal">
+                <span class="step-n">02</span>
+                <h3>Proposal &amp; site visit</h3>
+                <p>
+                  A written scope with line-item costing, two or three venue
+                  options, and a walkthrough of the shortlist with you.
+                </p>
+              </li>
+              <li class="step reveal">
+                <span class="step-n">03</span>
+                <h3>Build-up</h3>
+                <p>
+                  Vendor contracts, tastings, sample decor setup, and a shared
+                  timeline you can check any day of the week.
+                </p>
+              </li>
+              <li class="step reveal">
+                <span class="step-n">04</span>
+                <h3>Event days</h3>
+                <p>
+                  Our team is on site from the first truck to the final
+                  teardown. One named person is your only phone number.
+                </p>
+              </li>
+            </ol>
+          </div>
+        </section>
+
+        <section class="sec sec-tight" id="venues">
+          <div class="wrap">
+            <p class="eyebrow">Where</p>
+            <h2 class="sec-h">Venues we work in regularly</h2>
+            <p class="sec-lede">
+              We hold rates at roughly forty properties around Jaipur. These are
+              the four shapes most enquiries land on.
+            </p>
+
+            <div class="grid-4 reveal-group">
+              <article class="venue reveal" data-motif="a">
+                <div class="venue-img">
+                  <img
+                    src="images/venue-1.jpg"
+                    alt=""
+                    loading="lazy"
+                    onerror="this.closest('.venue').classList.add('no-img')"
+                  />
+                </div>
+                <h3>Heritage palace hotel</h3>
+                <p>
+                  Courtyard pheras, 300&ndash;600 guests. Highest per-plate
+                  cost, lowest amount of explaining you'll have to do to
+                  relatives.
+                </p>
+                <p class="venue-meta">
+                  ₹₹₹₹ · 300&ndash;600 pax · in-house catering
+                </p>
+              </article>
+              <article class="venue reveal" data-motif="b">
+                <div class="venue-img">
+                  <img
+                    src="images/venue-2.jpg"
+                    alt=""
+                    loading="lazy"
+                    onerror="this.closest('.venue').classList.add('no-img')"
+                  />
+                </div>
+                <h3>Garden resort, Delhi&nbsp;road</h3>
+                <p>
+                  Lawns plus indoor backup, easy for out-of-town guests arriving
+                  by road. Our most-booked category November through February.
+                </p>
+                <p class="venue-meta">
+                  ₹₹₹ · 400&ndash;1200 pax · outside caterer allowed
+                </p>
+              </article>
+              <article class="venue reveal" data-motif="c">
+                <div class="venue-img">
+                  <img
+                    src="images/venue-3.jpg"
+                    alt=""
+                    loading="lazy"
+                    onerror="this.closest('.venue').classList.add('no-img')"
+                  />
+                </div>
+                <h3>Private farmhouse</h3>
+                <p>
+                  Full-property buyout for intimate functions. No noise curfew
+                  negotiations with a hotel banquet manager at 11pm.
+                </p>
+                <p class="venue-meta">₹₹ · 80&ndash;250 pax · full buyout</p>
+              </article>
+              <article class="venue reveal" data-motif="d">
+                <div class="venue-img">
+                  <img
+                    src="images/venue-4.jpg"
+                    alt=""
+                    loading="lazy"
+                    onerror="this.closest('.venue').classList.add('no-img')"
+                  />
+                </div>
+                <h3>City banquet &amp; convention</h3>
+                <p>
+                  For corporate days and receptions where guests want a
+                  five-minute drive home. Loading bays and reliable power.
+                </p>
+                <p class="venue-meta">₹₹ · 150&ndash;900 pax · AV-ready</p>
+              </article>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- /sand -->
+
+      <!-- ─────────────── WORK ─────────────── -->
+      <section class="sec" id="work">
+        <div class="wrap">
+          <p class="eyebrow">Selected work</p>
+          <h2 class="sec-h">A few we're proud of</h2>
+
+          <div class="filters" role="group" aria-label="Filter work">
+            <button class="chip is-on" data-filter="all">All</button>
+            <button class="chip" data-filter="wedding">Weddings</button>
+            <button class="chip" data-filter="corporate">Corporate</button>
+            <button class="chip" data-filter="celebration">Celebrations</button>
+            <button class="chip" data-filter="fest">Fests</button>
+          </div>
+
+          <div class="gallery" id="gallery"></div>
+        </div>
+      </section>
+
+      <!-- ─────────────── STATS ─────────────── -->
+      <section class="stats" id="stats">
+        <div class="wrap grid-4 stats-in">
+          <div class="stat">
+            <span class="num" data-to="540" data-suffix="+">0</span>
+            <p>events delivered</p>
+          </div>
+          <div class="stat">
+            <span class="num" data-to="12" data-suffix=" yrs">0</span>
+            <p>in Jaipur</p>
+          </div>
+          <div class="stat">
+            <span class="num" data-to="40" data-suffix="+">0</span>
+            <p>venue partners</p>
+          </div>
+          <div class="stat">
+            <span class="num" data-to="96" data-suffix="%">0</span>
+            <p>book us again or refer</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ─────────────── PACKAGES ─────────────── -->
+      <section class="sec" id="packages">
+        <div class="wrap">
+          <p class="eyebrow">Packages</p>
+          <h2 class="sec-h">Three ways to work with us</h2>
+          <p class="sec-lede">
+            Indicative starting points. Every quote is rebuilt around your guest
+            count, venue and date.
+          </p>
+
+          <div class="grid-3 reveal-group">
+            <article class="tier reveal">
+              <h3>Coordination</h3>
+              <p class="tier-price">from ₹85,000</p>
+              <p class="tier-for">
+                You've booked the vendors. We run the days.
+              </p>
+              <ul class="ticks">
+                <li>Timeline &amp; run-sheet</li>
+                <li>Vendor coordination on site</li>
+                <li>Two-person team on event days</li>
+                <li>Teardown supervision</li>
+              </ul>
+              <a class="btn btn-line" href="#enquire">Get a quote</a>
+            </article>
+            <article class="tier tier-hero reveal">
+              <span class="tier-flag">Most booked</span>
+              <h3>Full planning</h3>
+              <p class="tier-price">from ₹3,50,000</p>
+              <p class="tier-for">
+                The whole thing, from empty calendar to teardown.
+              </p>
+              <ul class="ticks">
+                <li>Everything in Coordination</li>
+                <li>Venue scouting &amp; rate negotiation</li>
+                <li>Decor design &amp; production</li>
+                <li>Catering tastings &amp; menu build</li>
+                <li>Guest logistics &amp; hospitality desk</li>
+                <li>Line-item budget you can audit</li>
+              </ul>
+              <a class="btn btn-solid" href="#enquire">Get a quote</a>
+            </article>
+            <article class="tier reveal">
+              <h3>Destination</h3>
+              <p class="tier-price">on request</p>
+              <p class="tier-for">
+                Multi-day, out-of-town guests, more moving parts.
+              </p>
+              <ul class="ticks">
+                <li>Everything in Full planning</li>
+                <li>Room blocks across properties</li>
+                <li>Airport &amp; inter-venue transfers</li>
+                <li>Welcome hampers &amp; guest app</li>
+                <li>Dedicated hospitality team</li>
+              </ul>
+              <a class="btn btn-line" href="#enquire">Get a quote</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ─────────────── TESTIMONIALS ─────────────── -->
+      <div class="sand">
+        <section class="sec" id="words">
+          <div class="wrap">
+            <p class="eyebrow">In their words</p>
+            <div class="quotes" id="quotes">
+              <blockquote class="quote is-on">
+                <p>
+                  &ldquo;We had four functions in three days and two sets of
+                  relatives with opinions. Someone from their team was awake
+                  before we were, every single morning.&rdquo;
+                </p>
+                <cite>Meghna &amp; Arjun — wedding, Amer road</cite>
+              </blockquote>
+              <blockquote class="quote">
+                <p>
+                  &ldquo;They quoted line by line, stuck to it, and sent the GST
+                  invoice the same week. That is genuinely rare, and it is why
+                  finance cleared them again this year.&rdquo;
+                </p>
+                <cite>Admin lead — annual day, IT services firm</cite>
+              </blockquote>
+              <blockquote class="quote">
+                <p>
+                  &ldquo;Our artist landed two hours late. The crowd never found
+                  out, because they resequenced the whole evening on the
+                  spot.&rdquo;
+                </p>
+                <cite>Cultural secretary — campus festival</cite>
+              </blockquote>
+              <blockquote class="quote">
+                <p>
+                  &ldquo;My mother's sixtieth. Eighty people, one courtyard, and
+                  she cried at the right moment instead of worrying about the
+                  caterer.&rdquo;
+                </p>
+                <cite>Ritu S. — milestone birthday, Civil Lines</cite>
+              </blockquote>
+            </div>
+            <div
+              class="dots"
+              id="quoteDots"
+              role="tablist"
+              aria-label="Testimonials"
+            ></div>
+          </div>
+        </section>
+      </div>
+
+      <!-- ─────────────── FAQ ─────────────── -->
+      <section class="sec" id="faq">
+        <div class="wrap wrap-narrow">
+          <p class="eyebrow">Questions</p>
+          <h2 class="sec-h">Asked often enough to answer here</h2>
+
+          <div class="acc">
+            <details>
+              <summary>How far ahead should we book?</summary>
+              <div>
+                <p>
+                  For a November–February wedding, six to nine months. Corporate
+                  events need four to six weeks minimum. If your date is closer
+                  than that, call rather than fill the form — we can sometimes
+                  make it work.
+                </p>
+              </div>
+            </details>
+            <details>
+              <summary>What does the advance look like?</summary>
+              <div>
+                <p>
+                  Thirty per cent on signing, forty at the start of build-up,
+                  the balance on the final event day. Venue and catering
+                  advances are paid directly by you to the property, so nothing
+                  sits with us.
+                </p>
+              </div>
+            </details>
+            <details>
+              <summary>Do you work outside Jaipur?</summary>
+              <div>
+                <p>
+                  Yes — Udaipur, Jodhpur, Pushkar and Ranthambore regularly, and
+                  elsewhere in India for existing clients. Travel and stay for
+                  the team is billed at cost.
+                </p>
+              </div>
+            </details>
+            <details>
+              <summary>Can we use our own caterer or decorator?</summary>
+              <div>
+                <p>
+                  Of course. We'll fold them into the timeline and coordinate
+                  them like our own vendors. We don't take commissions from
+                  vendors, so we have no reason to push you toward ours.
+                </p>
+              </div>
+            </details>
+            <details>
+              <summary>What happens if it rains?</summary>
+              <div>
+                <p>
+                  Every outdoor plan we write has a wet-weather version
+                  attached, decided at a cut-off time we agree with you in
+                  advance — usually the morning of. No panic calls at 6pm.
+                </p>
+              </div>
+            </details>
+            <details>
+              <summary>Do you give GST invoices?</summary>
+              <div>
+                <p>
+                  Yes, on every engagement, corporate or personal. Purchase
+                  orders and vendor onboarding paperwork are handled by our
+                  accounts team.
+                </p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- ─────────────── ENQUIRY ─────────────── -->
+      <div class="sand">
+        <section class="sec" id="enquire">
+          <div class="wrap enq">
+            <div class="enq-copy">
+              <p class="eyebrow">Start here</p>
+              <h2 class="sec-h">Tell us the date and the headcount</h2>
+              <p class="sec-lede">
+                That's genuinely enough to begin. We reply within one working
+                day with either a proposal outline or a question or two.
+              </p>
+
+              <ul class="contact-list">
+                <li>
+                  <span class="cl-k">Call</span
+                  ><a href="tel:+910000000000">+91 00000 00000</a>
+                </li>
+                <li>
+                  <span class="cl-k">Email</span
+                  ><a href="mailto:hello@example.com">hello@example.com</a>
+                </li>
+                <li>
+                  <span class="cl-k">Office</span>C-Scheme, Jaipur, Rajasthan
+                  302001
+                </li>
+                <li><span class="cl-k">Hours</span>Mon–Sat, 10am–7pm IST</li>
+              </ul>
+
+              <div class="map">
+                <iframe
+                  title="Office location on map"
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  src="https://www.google.com/maps?q=C-Scheme,Jaipur,Rajasthan&output=embed"
+                ></iframe>
+              </div>
+            </div>
+
+            <!-- ============================================================
+         FORM ENDPOINT — this one line is all you change.
+         Formspree:  https://formspree.io/f/YOUR_ID
+         Web3Forms:  https://api.web3forms.com/submit  (also add the
+                     access_key hidden input they give you)
+         Leave it blank to run in demo mode (confirms on screen, sends nothing).
+         ============================================================ -->
+            <form
+              class="enq-form"
+              id="enqForm"
+              novalidate
+              method="POST"
+              action="https://formspree.io/f/xlgvpnnz"
+            >
+              <input
+                type="hidden"
+                name="_subject"
+                value="New enquiry from the website"
+              />
+              <input
+                type="text"
+                name="_gotcha"
+                class="hp"
+                tabindex="-1"
+                autocomplete="off"
+                aria-hidden="true"
+              />
+
+              <div class="f-row">
+                <label for="f-name">Your name</label>
+                <input
+                  id="f-name"
+                  name="name"
+                  type="text"
+                  required
+                  autocomplete="name"
+                  placeholder="Ahaan Soni"
+                />
+              </div>
+              <div class="f-two">
+                <div class="f-row">
+                  <label for="f-phone">Phone</label>
+                  <input
+                    id="f-phone"
+                    name="phone"
+                    type="tel"
+                    required
+                    autocomplete="tel"
+                    inputmode="tel"
+                    placeholder="+91 00000 00000"
+                  />
+                </div>
+                <div class="f-row">
+                  <label for="f-email">Email</label>
+                  <input
+                    id="f-email"
+                    name="email"
+                    type="email"
+                    required
+                    autocomplete="email"
+                    placeholder="you@example.com"
+                  />
+                </div>
+              </div>
+              <div class="f-two">
+                <div class="f-row">
+                  <label for="f-type">Event type</label>
+                  <select id="f-type" name="event_type">
+                    <option>Wedding</option>
+                    <option>Destination wedding</option>
+                    <option>Corporate event</option>
+                    <option>Milestone celebration</option>
+                    <option>College or community fest</option>
+                    <option>Decor &amp; production only</option>
+                  </select>
+                </div>
+                <div class="f-row">
+                  <label for="f-date">Preferred date</label>
+                  <input id="f-date" name="event_date" type="date" />
+                </div>
+              </div>
+              <div class="f-two">
+                <div class="f-row">
+                  <label for="f-guests">Approx. guests</label>
+                  <input
+                    id="f-guests"
+                    name="guests"
+                    type="number"
+                    min="10"
+                    step="10"
+                    inputmode="numeric"
+                    placeholder="350"
+                  />
+                </div>
+                <div class="f-row">
+                  <label for="f-budget">Rough budget</label>
+                  <select id="f-budget" name="budget">
+                    <option>Under ₹5 lakh</option>
+                    <option>₹5–15 lakh</option>
+                    <option>₹15–40 lakh</option>
+                    <option>Above ₹40 lakh</option>
+                    <option>Not sure yet</option>
+                  </select>
+                </div>
+              </div>
+              <div class="f-row">
+                <label for="f-msg">Anything else we should know</label>
+                <textarea
+                  id="f-msg"
+                  name="message"
+                  rows="4"
+                  placeholder="Number of functions, venue you have in mind, guests flying in…"
+                ></textarea>
+              </div>
+
+              <button class="btn btn-solid btn-wide" type="submit">
+                Send enquiry
+              </button>
+              <p class="f-note">
+                We reply within one working day. No newsletters, no reselling
+                your number.
+              </p>
+              <p
+                class="f-status"
+                id="fStatus"
+                role="status"
+                aria-live="polite"
+              ></p>
+            </form>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- ─────────────── FOOTER ─────────────── -->
+    <footer class="foot">
+      <div class="wrap foot-in">
+        <div class="foot-brand">
+          <span class="brand-name">Sabha</span>
+          <p>
+            Event planning in Jaipur and across Rajasthan. Weddings, corporate
+            days and everything in between.
+          </p>
+        </div>
+        <nav class="foot-col" aria-label="Services">
+          <h4>What we do</h4>
+          <a href="#services">Weddings</a
+          ><a href="#services">Destination weddings</a
+          ><a href="#services">Corporate events</a
+          ><a href="#services">Celebrations</a
+          ><a href="#services">Decor &amp; production</a>
+        </nav>
+        <nav class="foot-col" aria-label="Company">
+          <h4>Company</h4>
+          <a href="#work">Work</a><a href="#venues">Venues</a
+          ><a href="#packages">Packages</a><a href="#faq">FAQ</a
+          ><a href="#enquire">Contact</a>
+        </nav>
+        <div class="foot-col">
+          <h4>Follow</h4>
+          <a href="#" rel="noopener">Instagram</a
+          ><a href="#" rel="noopener">WhatsApp</a
+          ><a href="#" rel="noopener">YouTube</a
+          ><a href="#" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+      <div class="wrap foot-bot">
+        <p>© <span id="yr">2026</span> Sabha Event Company. Demo site.</p>
+        <p>Jaipur, Rajasthan · GSTIN on request</p>
+      </div>
+    </footer>
+
+    <!-- ─────────────── FLOATING ─────────────── -->
+    <a
+      class="wa"
+      href="https://wa.me/910000000000?text=Hi%2C%20I%27d%20like%20to%20plan%20an%20event"
+      target="_blank"
+      rel="noopener"
+      aria-label="Chat on WhatsApp"
+    >
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path
+          fill="currentColor"
+          d="M12.04 2c-5.46 0-9.9 4.44-9.9 9.9 0 1.75.46 3.45 1.32 4.95L2 22l5.3-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.9-4.44 9.9-9.9 0-2.64-1.03-5.13-2.9-7A9.82 9.82 0 0 0 12.04 2Zm0 18.02h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.05-.2-.31a8.19 8.19 0 0 1-1.26-4.36c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.83 2.41a8.19 8.19 0 0 1 2.41 5.83c0 4.54-3.7 8.22-8.24 8.22Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.79.97-.14.16-.29.18-.54.06-.25-.13-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.47c-.17 0-.43.06-.66.31-.22.25-.87.85-.87 2.07s.9 2.4 1.02 2.56c.12.17 1.76 2.68 4.26 3.76.6.26 1.06.41 1.42.53.6.19 1.14.16 1.57.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.17-.47-.29Z"
+        />
+      </svg>
+    </a>
+
+    <button
+      class="demo-btn"
+      id="demoBtn"
+      aria-expanded="false"
+      aria-controls="demoPanel"
+    >
+      About this demo
+    </button>
+
+    <aside class="demo-panel" id="demoPanel" hidden>
+      <div class="demo-head">
+        <h3>About this demo</h3>
+        <button class="demo-x" id="demoX" aria-label="Close">&times;</button>
+      </div>
+      <div class="demo-body">
+        <p class="demo-lede">
+          This is a working sample site. Everything below is either already
+          built, or can be switched on for you.
+        </p>
+
+        <h4>Live right now</h4>
+        <ul class="demo-list on">
+          <li>Enquiry form that emails you every submission</li>
+          <li>Visitor analytics — pages, sources, devices, cities</li>
+          <li>WhatsApp chat button, one tap from any screen</li>
+          <li>Date-availability ribbon that pre-fills the form</li>
+          <li>Filterable work gallery with full-screen viewer</li>
+          <li>Mobile-first layout, tested down to small phones</li>
+          <li>Google Maps embed and click-to-call</li>
+          <li>Search and social-preview markup for Google listings</li>
+          <li>Keyboard accessible, reduced-motion respected</li>
+        </ul>
+
+        <h4>Can be added</h4>
+        <ul class="demo-list off">
+          <li>Online payments and advance booking (Razorpay, Cashfree)</li>
+          <li>Admin panel to edit photos, packages and dates yourself</li>
+          <li>Real-time date availability wired to your calendar</li>
+          <li>Automatic WhatsApp and SMS confirmations to enquirers</li>
+          <li>Lead pipeline — track every enquiry to won or lost</li>
+          <li>Live chat during office hours</li>
+          <li>Google reviews pulled in automatically</li>
+          <li>Blog for search traffic</li>
+          <li>Hindi and English toggle</li>
+          <li>Vendor portal for caterers and decorators</li>
+          <li>Custom domain and business email</li>
+        </ul>
+        <p class="demo-foot">Ask and we'll scope any of these.</p>
+      </div>
+    </aside>
+    <div class="demo-scrim" id="demoScrim" hidden></div>
+
+    <!-- Lightbox -->
+    <div class="lb" id="lb" hidden>
+      <button class="lb-x" id="lbX" aria-label="Close">&times;</button>
+      <button class="lb-nav lb-prev" id="lbPrev" aria-label="Previous">
+        &#8249;
+      </button>
+      <figure class="lb-fig">
+        <div class="lb-media" id="lbMedia"></div>
+        <figcaption id="lbCap"></figcaption>
+      </figure>
+      <button class="lb-nav lb-next" id="lbNext" aria-label="Next">
+        &#8250;
+      </button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
